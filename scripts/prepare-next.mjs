@@ -1,0 +1,14 @@
+import { mkdir, readFile, writeFile, cp } from 'node:fs/promises';
+import ts from 'typescript';
+await mkdir('public',{recursive:true});
+await cp('assets','public/assets',{recursive:true});
+for(const name of ['style.css','reference.css','motion.css'])await cp(name,`public/${name}`);
+const html=await readFile('index.html','utf8');
+const markup=html.match(/<body>([\s\S]*?)<\/body>/)[1];
+await mkdir('app',{recursive:true});
+await writeFile('app/portfolio-markup.ts',`export const portfolioMarkup = ${JSON.stringify(markup)};\n`);
+const files=['sound.js','projects.js','additional-work.js','experience.js','reference.js','motion.js'];
+const sources=await Promise.all(files.map(name=>readFile(name,'utf8')));
+const typedProjects=ts.transpileModule(await readFile('lib/projects.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ESNext}}).outputText.replace('export const projects','const projects');
+sources[1]=(await readFile('languages.js','utf8'))+'\n'+typedProjects+'\nprojects.forEach(localizeProject);\n'+sources[1].slice(sources[1].indexOf('];')+2);
+await writeFile('public/portfolio-runtime.js',sources.map((source,index)=>index===1?source+'\ninitializeLanguages();':source).join('\n;\n').replaceAll('requestAnimationFrame(', 'window.portfolioMotion.requestFrame(').replaceAll('cancelAnimationFrame(', 'window.portfolioMotion.cancelFrame('));

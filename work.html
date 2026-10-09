@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="SAN — developer. Explore web, mobile, and AI projects: DentaLux, ENT Math, Flow, DocMind, and Zaga Zaga.">
+  <meta property="og:title" content="SAN — Portfolio">
+  <meta property="og:description" content="Web. Mobile. AI. Selected projects by SAN.">
+  <title>MY WORK — SAN</title>
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/278cbb97e75e04e2-s.p.0.yvvm36aa76d.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/reference.css"><link rel="stylesheet" href="/motion.css">
+  <script src="/sound.js" defer></script>
+  <script src="/projects.js" defer></script>
+  <script src="/experience.js" defer></script>
+  <script src="/reference.js" defer></script><script src="/motion.js" defer></script>
+</head>
+<body class="work-page">
+  <a class="skip-link" href="#all-work">Skip to projects</a>
+  <div class="boot" aria-hidden="true"><span>SAN<span class="boot-dot">.</span></span><div class="boot-progress"></div></div>
+  <div class="grid-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span class="grid-signal signal-one"></span><span class="grid-signal signal-two"></span></div>
+  <header class="header">
+    <a class="brand" href="/" aria-label="SAN, home"><img src="/assets/mark.svg" width="15" height="15" alt=""><span>SAN</span></a>
+    <button class="sound-toggle" aria-pressed="true" aria-label="Mute sound">SOUND — <span>ON</span></button>
+    <div class="header-time"><span>LOCAL TIME</span><time id="clock">—</time></div>
+    <span class="edition">PERSONAL PORTFOLIO<br>VOL. 01 / 2026</span>
+    <button class="corner-button menu-toggle" aria-expanded="false" aria-controls="menu"><span>MENU</span><i aria-hidden="true"></i></button>
+  </header>
+  <dialog id="menu" aria-label="Navigation">
+    <button class="sound-toggle menu-sound" aria-pressed="true" aria-label="Mute sound">SOUND — <span>ON</span></button>
+    <button class="corner-button menu-close" aria-label="Close menu">CLOSE</button>
+    <div class="menu-meta mono">/ MENU <span>EXPLORE THE PORTFOLIO</span></div>
+    <nav class="menu-links" aria-label="Main navigation"><a href="/#home" data-scramble>ABOUT</a><a href="/work" data-scramble>WORK</a><a href="#contact" data-scramble>CONNECT</a></nav>
+    <div class="menu-bottom"><a href="https://github.com/yessensiv" target="_blank" rel="noopener noreferrer">01 &nbsp; GITHUB ↗</a><span>© 2026 SAN</span></div>
+  </dialog>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-contact mono"><span class="contact-status">INDEPENDENT DEVELOPER</span><a href="https://github.com/yessensiv" target="_blank" rel="noopener noreferrer">GITHUB.COM / YESSENSIV ↗</a></div>
+      <div class="hero-art" aria-hidden="true"><canvas id="identity"></canvas><div class="scanlines"></div><span class="art-label mono">SAN / DIGITAL IDENTITY</span></div>
+      <button class="hero-art-toggle" aria-label="Show a note about my work" aria-pressed="false"></button><div class="hero-quote" aria-hidden="true">I BELIEVE GREAT WORK ISN’T MADE BY TALENT ALONE.<br>IT’S FORGED THROUGH<br>LATE NIGHTS,<br>BAD DRAFTS,<br>AND ONE TOO MANY<br>“JUST ONE MORE TRY.”</div>
+      <div class="hero-intro">I build digital experiences at the intersection of <em>design</em> and <strong>&lt;technology/&gt;</strong>. From thoughtful websites to mobile apps and AI tools — turning ideas into things you can use.</div>
+      <div class="hero-name"><span class="role-tag">DEVELOPER / WEB · MOBILE · AI</span><span class="name-eyebrow mono">HELLO, I'M</span><h1 id="hero-title"><span class="first-name" data-scramble>SAN</span></h1></div>
+      <div class="hero-side"><span class="side-letter">SAN.</span><span class="mono">DESIGNED TO EXPLORE</span></div>
+      <a href="#snapshots" class="scroll-cue mono">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a>
+      <span class="hero-year">26’</span>
+    </section>
+    <section id="snapshots" class="snapshots" aria-label="Project snapshots">
+      <div class="diagonal-stats">
+        <div class="stat-tile stats-repos"><span>PUBLIC REPOSITORIES</span><strong data-count="6">06</strong></div>
+        <div class="stat-tile stats-web"><span>LIVE WEBSITES</span><strong data-count="3">03</strong></div>
+        <div class="stat-tile stats-focus"><span>WEB / MOBILE / AI</span><strong data-count="3">03</strong></div>
+        <div class="stat-tile stats-ts"><span>TYPESCRIPT</span><b>TS</b></div>
+        <div class="stat-tile stats-py"><span>PYTHON</span><b>Py</b></div>
+        <div class="stat-tile stats-kt"><span>KOTLIN</span><b>K</b></div>
+        <div class="stat-tile stats-js"><span>JAVASCRIPT</span><b>JS</b></div>
+        <div class="stats-mark" aria-hidden="true"><canvas id="snapshot-glyph"></canvas></div>
+      </div>
+    </section>
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="work-sticky"><div id="project-track" class="project-track"></div><span class="work-index mono"><span id="work-position">01</span> / 06</span><div class="work-progress"><span></span></div></div>
+    </section>
+    <section class="project-notes" id="about" aria-labelledby="notes-title">
+      <div class="notes-heading"><span class="role-tag">I'VE BUILT</span><h2 id="notes-title">MY PROJECTS</h2></div>
+      <div class="project-selector"><div id="project-list-left" class="project-list"></div><div class="project-stage"><div class="project-logo-frame"><canvas id="project-mark" role="img" aria-label="DentaLux project"></canvas></div><p id="selected-project-description"></p><div id="selected-project-links" class="detail-links"></div></div><div id="project-list-right" class="project-list"></div></div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="contact-top"><div><h2 id="contact-title">LET'S CREATE<br>GOOD STUFF<br>TOGETHER.</h2><div class="contact-actions"><a class="corner-button" href="https://github.com/yessensiv" target="_blank" rel="noopener noreferrer">CONNECT ON GITHUB ↗</a><a class="corner-button" href="/work">EXPLORE MY WORK ↗</a></div></div><div class="footer-links"><div><span class="mono">PORTFOLIO</span><a href="/work">MY WORK ↗</a><a href="https://github.com/yessensiv" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div><div><span class="mono">LIVE PROJECTS</span><a href="https://dentalux-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">DENTALUX ↗</a><a href="https://zaga-zaga.vercel.app/" target="_blank" rel="noopener noreferrer">ZAGA ZAGA ↗</a><a href="https://ent-math-learning.netabasyn.chatgpt.site/" target="_blank" rel="noopener noreferrer">ENT MATH ↗</a></div></div></div>
+      <div class="footer-wordmark"><span class="sr-only">PORTFOLIO / SAN</span><canvas id="footer-glyph" aria-hidden="true"></canvas></div><footer><span class="mono">© 2026 SAN</span><a href="/#home" aria-label="Back to top">↑</a></footer>
+    </section>
+  </main>
+  <div class="cursor" aria-hidden="true"></div>
+</body>
+</html>
+
+
