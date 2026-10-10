@@ -17,7 +17,7 @@
 
 **Сайты:** DentaLux, ENT Math, Zaga Zaga, [AST Group](https://ast-group-website.vercel.app/), [LeadFlow](https://saa-s-bojp.vercel.app/).
 
-**Приложения и ИИ:** Flow — Android-приложение для загрузки медиа; DocMind — Telegram-помощник для работы с документами.
+**Приложения и ИИ:** [Within](https://within-roan.vercel.app/) — личный блокнот и коллекция целей с Markdown-записями и воспоминаниями; Flow — Android-приложение для загрузки медиа; DocMind — Telegram-помощник для работы с документами.
 
 **Графический дизайн:** «Дизайн под ключ», Porsche 911 GT3 RS, Design Level Up, Darth Vader.
 
